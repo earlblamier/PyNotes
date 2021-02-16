@@ -1,20 +1,20 @@
 # Count strings in a sentence
 # Count lower case and uppercases
 # Converting of strings
-string = 'To construct the notion of a Lie group in Dirac geometry, extending the definition of Poisson Lie groups, the Courant algebroids A must themselves carry a multiplicative structure.'
+sentence = 'To construct the notion of a Lie group in Dirac geometry, extending the definition of Poisson Lie groups, the Courant algebroids A must themselves carry a multiplicative structure.'
 newstring = ' '  
 count_upperCase = 0
 count_lowerCase = 0
 count_blankspace = 0
 
 #total length of sentence
-totalLen = len(string)
+totalLen = len(sentence)
 
 #half length of sentence
 halfString = totalLen/2
 
 #for loops
-for letter in string:  
+for letter in sentence:  
 # Checking for lowercase letter and  
 # converting to uppercase.  
     if (letter.isupper()) == True:  
