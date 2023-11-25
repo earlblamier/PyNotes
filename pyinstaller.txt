@@ -1,0 +1,36 @@
+If you're receiving the message "pyinstaller: The term 'pyinstaller' is not recognized...", it indicates that PyInstaller might not be installed properly or its installation directory is not added to the system's PATH variable.
+
+To troubleshoot this:
+
+Confirm PyInstaller Installation:
+
+Open a command prompt and check if PyInstaller is installed:
+
+cmd
+Copy code  
+pip show pyinstaller
+If PyInstaller is installed, it will display information about the package, including its version and installation path. If it's not installed, you'll see an error indicating that the package is not found.
+
+Check Python Scripts Location:
+
+If PyInstaller was installed but the command is not recognized, it might be due to Python's scripts location not being added to the PATH variable. Check the location where Python scripts are installed by running:
+
+cmd
+Copy code
+pip show -f pyinstaller | findstr "Location"
+This command will show the location where PyInstaller is installed. Make sure this path is added to the system's PATH environment variable.
+
+Reinstall PyInstaller:
+
+If PyInstaller is not installed or there are issues with the installation, you can reinstall it:
+
+cmd
+Copy code
+pip install pyinstaller
+Reinstalling might resolve any installation-related issues.
+
+Manually Locate PyInstaller:
+
+If you can't find PyInstaller via the command line, try manually searching for the PyInstaller executable on your system. It might be located in the Python Scripts directory.
+
+After ensuring PyInstaller is installed and its location is in the PATH variable, reopen the command prompt and try running pyinstaller again.
