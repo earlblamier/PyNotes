@@ -34,3 +34,13 @@ Manually Locate PyInstaller:
 If you can't find PyInstaller via the command line, try manually searching for the PyInstaller executable on your system. It might be located in the Python Scripts directory.
 
 After ensuring PyInstaller is installed and its location is in the PATH variable, reopen the command prompt and try running pyinstaller again.
+
+
+Issues:
+1. Pyinstaller exe won't work outside the dist folder
+2. pyinstaller exe closes immediately and no output.
+
+Solution:
+use --onefile
+
+pyinstaller --onefile script.py
